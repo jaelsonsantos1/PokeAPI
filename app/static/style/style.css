@@ -84,7 +84,7 @@ main {
     width: 50%;
     font-size: clamp(18px, 10%, 20px);
     font-weight: 600;
-    font-family: 'Open Sans light';
+    font-family: 'open-sans-extrabold';
     color: #aaa;
     position: absolute;
     top: 50%;
