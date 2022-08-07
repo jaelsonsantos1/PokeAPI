@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <img src="../static/img/console.png" alt="console de videogame" class="console">
+    <img src="{{gif}}" alt="Imagem de um pokemon." class="pokemon_img">
+    <h1 class="pokemon_info">
+        <span class="pokemon_id">{{id}}</span>
+        <span class="pokemon_nome">{{nome}}</span>
+    </h1>
+    <form action="http://127.0.0.1:5000/buscar" method="post" class="form">
+        <input type="text" name="pesquisa" class="pesquisa" placeholder="Ex. Pikachu..." required>
+        
+        <div class="botao">
+            <button type="submit">
+                <img src="../static/img/pesquisa-de-lupa.png" alt="Imagem de uma lupinha de pesquisa." id="lupa">
+            </button>
+        </div>
+    </form>
+    <div class="pokemon_pesquisa gradient">
+        <h2>
+            <span class="chave">Altura: </span> 
+            <span class="valor">{{altura}}m</span>
+        </h2>
+        <h2>
+            <span class="chave">Peso: </span> 
+            <span class="valor">{{peso}}kg</span>
+        </h2>
+        <h2>
+            <span class="chave">Tipo: </span> 
+            <span class="valor">{{tipo}}</span>
+        </h2>
+        <h2>
+            <span class="chave">habil. 1: </span> 
+            <span class="valor">{{habilidade1}}</span>
+        </h2>
+        <h2>
+            <span class="chave">habil. 2: </span> 
+            <span class="valor">{{habilidade2}}</span>
+        </h2>
+    </div>
+{% endblock %}

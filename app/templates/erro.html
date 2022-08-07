@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <img src="../static/img/console.png" alt="console de videogame" class="console">
+    <form action="http://127.0.0.1:5000/buscar" method="post" class="form">
+        <input type="text" name="pesquisa" class="pesquisa" placeholder="Ex. Pikachu..." required>
+        <div class="botao">
+            <button type="submit">
+                <img src="../static/img/pesquisa-de-lupa.png" alt="Imagem de uma lupinha de pesquisa." id="lupa">
+            </button>
+        </div>
+    </form>
+    <div class="info">
+        <img src="../static/img/pato_imagem.png" alt="Imagem de um pato.">
+        <h1 class="gradient">
+            <span>Ops!</span>
+            <span>Pokémon errado!</span>
+        </h1>
+    </div>
+{% endblock %}

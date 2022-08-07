@@ -1,0 +1,256 @@
+/* Importando fontes */
+@font-face {
+    font-family: 'Open Sans light';
+    src: url('/static/fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'open-sans-extrabold';
+    src: url('/static/fonts/open-sans-extrabold.ttf');
+}
+
+/* Formatação geral */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Foematando o body e o html */
+body, html {
+    background-color: #83dd99;
+    height: 100%;
+}
+
+/* Formatando a claase container do site */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formatando o cabeçalho do site */
+header img {
+    width: 400px;
+    position: relative;
+    top: 70px;
+}
+
+/* Formatando o corpo do site */
+main {
+    position: relative;
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+}
+
+.console {
+    width: 100%;
+    max-width: 650px;
+}
+
+.pokemon_img {
+    position: absolute;
+    bottom: 50%;
+    left: 65%;
+    transform: translate(-20%, 50%);
+    height: 18%;
+}
+
+.pokemon_img_modificado {
+    position: absolute;
+    bottom: 52%;
+    left: 48%;
+    transform: translate(-20%, 50%);
+    height: 18%;
+}
+
+.pokemon_info {
+    font-size: clamp(18px, 10%, 20px);
+    font-weight: 600;
+    font-family: 'Open Sans light';
+    color: #aaa;
+    position: absolute;
+    top: 58%;
+    right: 23%;
+    transform: translate(-20%, 50%);
+}
+
+.pokemon_info_modificado {
+    height: 20%;
+    width: 50%;
+    font-size: clamp(18px, 10%, 20px);
+    font-weight: 600;
+    font-family: 'Open Sans light';
+    color: #aaa;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-27%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon_nome {
+    color: #F8658F;
+    text-transform: capitalize;
+}
+
+.nome_modificado {
+    color: #F8658F;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(15px, 10%, 20px);
+    line-height: 100%;
+}
+
+.pokemon_id {
+    color: #FA9E54;
+}
+
+.form {
+    position: absolute;
+    width: 40%;
+    top: 27%;
+    left: 32%;
+}
+
+.botao {
+    position: absolute;
+    top: 14%;
+    right: 5%;
+}
+
+.botao button {
+    background: none;
+    border: none;
+}
+.pesquisa {
+    width: 100%;
+    height: 30px;
+    border: 3px solid #83dd99;
+    background-color: #131314;
+    border-radius: 15px;
+    color: #83DD99;
+    font-weight: 400;
+    font-size: clamp(15px, 10%, 20px);
+    padding-left: 15px;
+}
+
+.pesquisa:hover {
+    border: 3px solid #74CBB3;
+    background-color: #131314;
+    color: #74CBB3;
+    transition: .2s;
+}
+
+#pesquisa:focus {
+    border: 3px solid #b5f4c491;
+    background-color: #131314;
+    color: #c2dd83;
+    transition: .2s;
+}
+#lupa {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+#lupa:hover {
+    cursor: pointer;
+}
+
+.pokemon_pesquisa {
+    color: #74CBB3;
+    font-family: 'open-sans-extrabold';
+    font-weight: 200;
+    font-size: 70%;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    line-height: 2em;
+}
+
+.info {
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    top: 40%;
+    left: 25%;
+}
+
+.info img {
+    position: absolute;
+    width: 25%;
+    top: 20%;
+    left: 10%;
+}
+
+.info h1 {
+    width: 50%;
+    height: 80%;
+    font-size: clamp(18px, 10%, 20px);
+    font-weight: 900;
+    font-family: 'Open Sans light';
+    color: rgb(251, 127, 127);
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-20%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gradient {
+    background-image: linear-gradient(to top, #59ABE4, #6CC1C2, #80DA9F);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+  }
+
+.gradient_2 {
+    background-image: linear-gradient(to top, #3269B1, #80DA9F, #52A3F0);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+
+/* Formatando o rodapé do site */
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: #83dd99;
+    font-family: 'Open Sans light';
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(140, 34, 113);
+}

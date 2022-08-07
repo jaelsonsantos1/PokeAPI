@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <img src="../static/img/console.png" alt="console de videogame" class="console">
+    <img src="../static/img/pokemon_snorlax.png" alt="Imagem de um pokemon." class="pokemon_img_modificado">
+    <h1 class="pokemon_info_modificado">
+        <span class="nome_modificado gradient_2">Quer saber mais sobre seu Pokémon preferido? Pesquise pelo ID ou nome do pokémon.</span>
+    </h1>
+    <form action="http://127.0.0.1:5000/buscar" method="post" class="form">
+        <input type="text" name="pesquisa" class="pesquisa" placeholder="Ex. Pikachu..." required>
+        
+        <div class="botao">
+            <button type="submit">
+                <img src="../static/img/pesquisa-de-lupa.png" alt="Imagem de uma lupinha de pesquisa." id="lupa">
+            </button>
+        </div>
+    </form>
+{% endblock %}
