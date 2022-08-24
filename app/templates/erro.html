@@ -2,7 +2,7 @@
 
 {% block conteudo %}
     <img src="../static/img/console.png" alt="console de videogame" class="console">
-    <form action="http://127.0.0.1:5000/buscar" method="post" class="form">
+    <form action="{{dominio_servidor}}" method="post" class="form">
         <input type="text" name="pesquisa" class="pesquisa" placeholder="Ex. Pikachu..." required>
         <div class="botao">
             <button type="submit">
