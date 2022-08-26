@@ -60,5 +60,5 @@ Contribuições são sempre bem-vindas! ❤️
 
 ## Links
 
-- [Projeto PokeAPI rodando 🚀](https://medium.com/@giu.drawer/criando-um-arquivo-readme-para-o-seu-projeto-afd66ce1af40)
+- [Projeto PokeAPI rodando 🚀](https://flask-pokeapi.herokuapp.com/)
 - [API pokemon utilizada](https://pokeapi.co/)
