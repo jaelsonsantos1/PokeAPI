@@ -9,7 +9,6 @@ Este projeto é a representação de uma PokeDex, um pequeno console ilustrativo
 </div>
 
 
-
 ## Começando
 
 Para executar o projeto, será necessário instalar os seguintes programas:
@@ -31,6 +30,7 @@ git clone https://github.com/jaelsonsantos1/PokeAPI
 Para construir o projeto com o Flask, é necessário executar o comando abaixo:
 
 ```shell
+cd "diretorio do projeto"
 pip install -r requirements.txt
 ``` 
 
